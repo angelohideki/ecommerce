@@ -2,7 +2,7 @@
     "name": "angelohideki/ecommerce",
     "authors": [
         {
-            "name": "ângelo Hideki Noda",
+            "name": "Ângelo Hideki Noda",
             "email": "angelonoda@gmail.com"
         }
     ],
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\hcodebr\\php-classes\\src"
+            "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
         }
     }
 }
