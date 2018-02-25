@@ -20,14 +20,14 @@ class User extends Model{
 		
 		));
 		
-		if (count($resuts) === 0)
+		if (count($results) === 0)
 		{
 			
 			throw new \Exception("Usuário inexistente ou senha inválida.");
 			
 		}
 		
-		$data = $resuts[0];
+		$data = $results[0];
 		
 		if (password_verify($password, $data["despassword"]) === true)
 		{
@@ -36,7 +36,7 @@ class User extends Model{
 			
 			$user->setData($data);
 
-			$_SESSION[User::SESSION] = $user->getValues;
+			$_SESSION[User::SESSION] = $user->getValues();
 		
 			return $user;
 
